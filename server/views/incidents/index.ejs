@@ -17,7 +17,7 @@ Date: June 20, 2023
           <!-- ------------------------ -->
           <!-- FIX THE ADD BUTTON BELOW -->
           <!-- ------------------------ -->
-          <a href="/books/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add an Incident</a>
+          <a href="/incidents/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add an Incident</a>
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
@@ -31,18 +31,18 @@ Date: June 20, 2023
                 </thead>
                 <tbody>
                 <!-- Template Row -->
-                <% for (let count = 0; count < books.length; count++) { %>
+                <% for (let count = 0; count < incidents.length; count++) { %>
                 <tr>
-                  <td><%= books[count].Title %></td>
-                  <td class="text-center">$<%= books[count].Price %></td>
-                  <td class="text-center"><%= books[count].Author %></td>
-                  <td class="text-center"><%= books[count].Genre %></td>
+                  <td class="text-center"><%= incidents[count].incidentID %></td>
+                  <td class="text-center"><%= incidents[count].incidentClass %></td>
+                  <td class="text-center"><%= incidents[count].incidentDate %></td>
+                  <td class="text-center"><%= incidents[count].incidentDescription %></td>
 
                   <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- ADD the EDIT BUTTON HERE -->
                     <!-- ------------------------ -->
-                    <a href="/books/<%= books[count]._id %>"
+                    <a href="/incidents/<%= incidents[count]._id %>"
                        class="btn btn-primary">
                       Edit
                     </a>
@@ -52,7 +52,7 @@ Date: June 20, 2023
                     <!-- ------------------------ -->
                     <!-- ADD the DELETE BUTTON HERE -->
                     <!-- ------------------------ -->
-                    <a href="/books/delete/<%= books[count]._id %>"
+                    <a href="/incidents/delete/<%= incidents[count]._id %>"
                        class="btn btn-danger">
                       Delete
                     </a>

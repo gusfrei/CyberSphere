@@ -1,0 +1,35 @@
+<!-- File: details.ejs -->
+
+<% include ../partials/header.ejs %>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <h1>Incident Management</h1>
+      <form class="form" method="post">
+        <div class="form-group">
+          <label for="NameTextField">Incident ID</label>
+          <input type="text" class="form-control" id="NameTextField" name="incidentID" placeholder="Type in Incident ID" required>
+        </div>
+        <div class="form-group">
+          <label for="PriceTextField">Incident Class</label>
+          <input type="text" class="form-control" id="PriceTextField" name="incidentClass" placeholder="Type in Incident Class" required>
+        </div>
+        <div class="form-group">
+          <label for="AuthorTextField">Incident Date</label>
+          <input type="date" class="form-control" id="AuthorTextField" name="incidentDate">
+        </div>
+        <div class="form-group">
+          <label for="GenreTextField">Incident Description</label>
+          <input type="text" class="form-control" id="GenreTextField" name="incidentDescription" placeholder="Describe the incident" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Save Incident</button>
+        <a href="/incidents" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer.ejs %>

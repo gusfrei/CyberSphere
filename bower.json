@@ -1,6 +1,6 @@
 {
   "name": "comp308-w2017-midterm",
-  "description": "## Welcome to the MidTerm Project - the Favourite Book List App",
+  "description": "## Welcome to the MidTerm Project - the Favourite incident List App",
   "main": "server.js",
   "authors": [
     "Tom Tsiliopoulos"
