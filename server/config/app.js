@@ -10,6 +10,7 @@ let mongoose = require('mongoose');
 // URI
 let DB = require('./db');
 
+
 mongoose.connect(process.env.URI || DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 let mongoDB = mongoose.connection;
@@ -17,6 +18,14 @@ mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
 mongoDB.once('open', ()=> {
   console.log("Connected to MongoDB...");
 });
+
+//favicon 
+try {
+  app.use(favicon(__dirname + 'client/favicon.ico'));
+} catch (error) {
+  console.error('Error setting favicon middleware:', error);
+}
+
 
 
 // define routers

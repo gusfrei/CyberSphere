@@ -1,15 +1,5 @@
-/* -  File: app.js
-COMP229 - S2023
-Student: Gustavo Frei 
-Student ID: 301290162 
-Date: June 20, 2023 
--->
-
-
-
 /* custom JS goes here */
 
-/* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){
     var $this = this,
         defaults = {
