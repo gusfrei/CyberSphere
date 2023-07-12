@@ -1,9 +1,9 @@
 {
-  "name": "comp308-w2017-midterm",
-  "description": "## Welcome to the MidTerm Project - the Favourite incident List App",
+  "name": "COMP229-S2023-GROUP PROJECT",
+  "description": "COMP229-S2023-GROUP PROJECT",
   "main": "server.js",
   "authors": [
-    "Tom Tsiliopoulos"
+    
   ],
   "license": "ISC",
   "keywords": [

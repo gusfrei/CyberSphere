@@ -29,7 +29,7 @@
     "node": "^10.15.0",
     "npm": "^6.0.0"
   },
-  "description": "## Welcome to the MidTerm Project - the Favourite incident List App",
+  "description": " COMP229-S2023-GROUP PROJECT",
   "main": "server.js",
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
