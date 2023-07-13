@@ -1,9 +1,5 @@
-<!--  File: index.ejs
-COMP229 - S2023
-Student: Gustavo Frei 
-Student ID: 301290162 
-Date: June 20, 2023 
--->
+
+
 
 
 
@@ -14,9 +10,7 @@ Date: June 20, 2023
       <div class="row">
         <div class="col-md-offset-1 col-md-10">
           <h3>Incident List </h3>
-          <!-- ------------------------ -->
-          <!-- FIX THE ADD BUTTON BELOW -->
-          <!-- ------------------------ -->
+      
           <a href="/incidents/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add an Incident</a>
           <br>
           <div class="table-responsive">
@@ -30,7 +24,7 @@ Date: June 20, 2023
                 </tr>
                 </thead>
                 <tbody>
-                <!-- Template Row -->
+        
                 <% for (let count = 0; count < incidents.length; count++) { %>
                 <tr>
                   <td class="text-center"><%= incidents[count].incidentID %></td>
@@ -39,9 +33,7 @@ Date: June 20, 2023
                   <td class="text-center"><%= incidents[count].incidentDescription %></td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the EDIT BUTTON HERE -->
-                    <!-- ------------------------ -->
+            
                     <a href="/incidents/<%= incidents[count]._id %>"
                        class="btn btn-primary">
                       Edit
@@ -49,9 +41,7 @@ Date: June 20, 2023
                   </td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the DELETE BUTTON HERE -->
-                    <!-- ------------------------ -->
+              
                     <a href="/incidents/delete/<%= incidents[count]._id %>"
                        class="btn btn-danger">
                       Delete

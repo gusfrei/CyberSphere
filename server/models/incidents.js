@@ -3,9 +3,9 @@ let mongoose = require('mongoose');
 // create a model class
 let incident = mongoose.Schema({
     incidentID: String,
-    inicidentClass: String,
-    inicidentDate: Date,
-    inicidentDescription: String,
+    incidentClass: String,
+    incidentDate: Date,
+    incidentDescription: String,
 },
 {
   collection: "incidents"
