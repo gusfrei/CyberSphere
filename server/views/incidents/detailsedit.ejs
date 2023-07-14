@@ -10,19 +10,19 @@
       <form class="form" method="post">
         <div class="form-group">
           <label for="incidentIDField">Incident ID</label>
-          <input type="text" class="form-control" id="incidentIDField" name="incidentID" placeholder="Type in Incident ID"  required>
+          <input type="text" class="form-control" id="incidentIDField" name="incidentID" placeholder="Type in Incident ID" value="<%= incident.incidentID %>" required>
         </div>
         <div class="form-group">
           <label for="incidentClassField">Incident Class</label>
-          <input type="text" class="form-control" id="incidentClassField" name="incidentClass" placeholder="Type in Incident Class"  required>
+          <input type="text" class="form-control" id="incidentClassField" name="incidentClass" placeholder="Type in Incident Class" value="<%= incident.incidentClass %>" required>
         </div>
         <div class="form-group">
           <label for="incidentDateField">Incident Date</label>
-          <input type="date" class="form-control" id="incidentDateField" name="incidentDate" >
+          <input type="date" class="form-control" id="incidentDateField" name="incidentDate" value="<%= incident.incidentDate %>">
         </div>
         <div class="form-group">
           <label for="incidentDescriptionField">Incident Description</label>
-          <input type="text" class="form-control" id="incidentDescriptionField" name="incidentDescription" placeholder="Describe the incident"  required>
+          <input type="text" class="form-control" id="incidentDescriptionField" name="incidentDescription" placeholder="Describe the incident" value="<%= incident.incidentDescription %>" required>
         </div>
 
         <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Save Incident</button>
