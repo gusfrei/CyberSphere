@@ -52,7 +52,7 @@ router.get('/:id', (req, res, next) => {
     }
     res.render('incidents/details', {
       title: 'Edit Incident',
-      incident: incidentToEdit
+      incidents: incidentToEdit
     });
   });
 });
