@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 let incident = mongoose.Schema({
     incidentID: String,
     incidentClass: String,
-    incidentDate: Date,
+    incidentDate: String,
     incidentDescription: String,
 },
 {
