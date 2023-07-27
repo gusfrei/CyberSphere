@@ -39,6 +39,11 @@
             <li><a href="/incidents"><i class="fa fa-incident fa-lg" >
             </i>Incident Management</a></li>
           <% } %>
+          <% if(title == "login") { %>
+            <li class="active"><a href="/"></i class='fa fa-incident fa-lg'>Login</a></li>
+          <% } else { %>
+            <li><a href="/login"><i class="fa fa-home fa-lg"></i>Login</a></li>
+          <% } %>
 
       </ul>
     </div><!-- /.navbar-collapse -->
