@@ -26,13 +26,17 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse" style="height: 100px;">
     <ul class="nav navbar-nav navbar-right" style="height: 100px;">
-      <!-- Home link -->
       <% if (isLoggedIn) { %>
         <!-- Show Home link -->
         <li <% if (title === 'Home') { %>class="active"<% } %>><a href="/"><i class="fa fa-home fa-lg"></i>Home</a></li>
 
-        <!-- Show Incident Management link -->
-        <li <% if (title === 'Incident Management') { %>class="active"<% } %>><a href="/incidents"><i class="fa fa-incident fa-lg" style="padding-top:  10%;"></i>Incident Management</a></li>
+        <% if (title === 'Incident Management') { %>
+          <!-- Show Incident Management link -->
+          <li class="active"><a href="/incidents"><i class="fa fa-incident fa-lg" style="padding-top:  10%;"></i>Incident Management</a></li>
+        <% } else { %>
+          <!-- Hide Incident Management link on other pages -->
+          <li><a href="/incidents"><i class="fa fa-incident fa-lg" style="padding-top:  10%;"></i>Incident Management</a></li>
+        <% } %>
 
         <!-- Show Logout link when user is authenticated -->
         <li><a href="/logout"><i class="fa fa-sign-out fa-lg"></i>Logout</a></li>
@@ -40,7 +44,6 @@
         <!-- Show Login link when user is not authenticated -->
         <li <% if (title === 'Login') { %>class="active"<% } %>><a href="/login"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
       <% } %>
-
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
