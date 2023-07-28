@@ -43,6 +43,11 @@
       <% } else { %>
         <!-- Show Login link when user is not authenticated -->
         <li <% if (title === 'Login') { %>class="active"<% } %>><a href="/login"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
+
+        <!-- Show Register link on the main page -->
+        <% if (title === 'Home') { %>
+          <li><a href="/register"><i class="fa fa-user-plus fa-lg"></i>Register</a></li>
+        <% } %>
       <% } %>
     </ul>
   </div><!-- /.navbar-collapse -->
