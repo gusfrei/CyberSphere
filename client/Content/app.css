@@ -1,14 +1,27 @@
 /* Custom CSS goes here */
-body {
-  padding-bottom: 70px;
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
   }
-  @font-face {
+}
+body 
+{
+  padding-bottom: 70px;
+  font-family: Lato;
+
+}
+
+
+@font-face 
+{
     font-family: Lato;
     font-weight: 900; /* Black */
     font-style: normal;
     src: url('../assets/fonts/Lato-Black.ttf') format('truetype');
   }
-  @font-face {
+@font-face {
     font-family: Lato-regular;
     font-weight: 900; /* Black */
     font-style: normal;
@@ -17,7 +30,7 @@ body {
 
   
   
-    .banner-container {
+.banner-container {
       display: flex;
       background: #5fb1d4;
       color:whitesmoke;
@@ -27,7 +40,7 @@ body {
       margin: auto;
     }
   
-    .banner-image {
+.banner-image {
       flex: 1;
       padding: 20px;
       justify-content: center;
@@ -35,13 +48,13 @@ body {
      
     }
   
-    .banner-description {
+.banner-description {
       flex: 1;
       padding: 10px;
       margin-top: 0px;
     }
   
-    .banner-description h1
+.banner-description h1
     {
       font-family: 'Lato' ;
       font-size: 60px;
@@ -49,7 +62,7 @@ body {
       margin-bottom: 50px;
       margin-top: 0px;
     }
-    .banner-description p
+.banner-description p
     {
       font-family: 'Lato' ;
       font-style: italic;
@@ -59,7 +72,7 @@ body {
     }
   
     
-    .banner-image img
+.banner-image img
     {
       width: 700px;
       margin: 20px 5px;
@@ -159,6 +172,16 @@ padding: 40px;
   color: #333333;
   line-height: 1.5;
 }
+.txt3
+{
+  font-family:Lato-Regular;
+  font-size: 13px;
+  color: red;
+  line-height: 1.5;
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -208,7 +231,7 @@ padding: 40px;
 
 .login100-form-title {
   display: block;
-  font-family: Poppins-Bold;
+  font-family: Lato-Regular;
   font-size: 30px;
   color: #333333;
   line-height: 1.2;
@@ -229,7 +252,7 @@ padding: 40px;
 }
 
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: Lato-Regular;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -274,7 +297,7 @@ padding: 40px;
 }
 
 .focus-input100::after {
-  font-family: Poppins-Regular;
+  font-family: Lato-Regular;
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
@@ -427,8 +450,17 @@ padding: 40px;
 .btn-3 span {
   position: relative;
   display: block;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 200;
   width: 100%;
   height: 100%;
+}
+.btn-3 button
+{
+  font-family: 'Lato';
+  font-size: 18px; 
+  font-weight: 200;
 }
 .btn-3:before,
 .btn-3:after {
@@ -436,7 +468,7 @@ padding: 40px;
   content: "";
   right: 0;
   top: 0;
-   background: rgba(2,126,251,1);
+   background: rgb(227, 236, 245);
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -458,7 +490,7 @@ padding: 40px;
   width: 100%;
 }
 .btn-3 span:hover{
-   color: rgba(2,126,251,1);
+   color: rgb(255, 175, 243);
 }
 .btn-3 span:before,
 .btn-3 span:after {
@@ -466,7 +498,7 @@ padding: 40px;
   content: "";
   left: 0;
   bottom: 0;
-   background: rgba(2,126,251,1);
+   background: rgb(233, 238, 242);
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
@@ -484,6 +516,92 @@ padding: 40px;
   width: 100%;
 }
 
+  /*--------------------------------------------------------------------------
+  Tab CSS*/
+
+  
+    .tab-container1 {
+      margin: 40px auto;
+      padding: 40px;
+    }
+    .tab-container1 h2
+    {
+      font-family: Lato;
+      font-size: 50px;
+      padding: 30px;
+    }
+    .section-title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .tab-container2 {
+      margin-top: 20px;
+    } 
+    /* Add and Edit Incident css*/
     
-
-
+    .page-wrapper {
+      margin: 40px;
+      min-height: 100vh;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .card-body {
+      padding: 50px;
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .input--style-4 {
+      width: 100%;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      color: #666;
+    }
+    .btn--radius-2 {
+      padding: 10px 30px;
+      border-radius: 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #5fb1d4;
+      border: none;
+      cursor: pointer;
+    }
+    .btn--radius-2:hover {
+      background-color: #4a98ba;
+    }
+    .btn--radius-1 {
+      padding: 10px 30px;
+      border-radius: 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #efaa47;
+      border: none;
+      cursor: pointer;
+    }
+    .btn--radius-1:hover {
+      background-color: #d98715;
+    }
