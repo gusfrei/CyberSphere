@@ -53,7 +53,7 @@ router.get('/:id', (req, res, next) => {
     }
     res.render('incidents/detailsedit', {
       title: 'Edit Incident',
-      incidents: incidentToEdit
+      incident: incidentToEdit
     });
   });
 });
