@@ -1,0 +1,50 @@
+<!-- File: details.ejs -->
+
+<% include ../partials/header.ejs %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel='stylesheet' href='/Content/app.css' />
+  <style>
+    /* Your custom styles here */
+
+    /* General styles */
+    
+  </style>
+
+<body>
+  <div class="page-wrapper">
+    <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+        <div class="card-body">
+          <h2 class="title">Incident Management</h2>
+          <form class="form" method="post">
+            <div class="input-group">
+              <label class="label" for="incidentIDField">Incident ID</label>
+              <input class="input--style-4" type="text" id="incidentIDField" name="incidentID" placeholder="Type in Incident ID" value="<%= incident.incidentID %>" required>
+            </div>
+            <div class="input-group">
+              <label class="label" for="incidentClassField">Incident Class</label>
+              <input class="input--style-4" type="text" id="incidentClassField" name="incidentClass" placeholder="Type in Incident Class" value="<%= incident.incidentClass %>" required>
+            </div>
+            <div class="input-group">
+              <label class="label" for="incidentDateField">Incident Date</label>
+              <input class="input--style-4" type="date" id="incidentDateField" name="incidentDate" value="<%= incident.incidentDate %>">
+            </div>
+            <div class="input-group">
+              <label class="label" for="incidentDescriptionField">Incident Description</label>
+              <input class="input--style-4" type="text" id="incidentDescriptionField" name="incidentDescription" placeholder="Describe the incident" value="<%= incident.incidentDescription %>" required>
+            </div>
+
+            <button type="submit" class="btn btn--radius-2 btn--blue"><i class="fa fa-check-square-o"></i> Save Incident</button>
+            <a href="/incidents" class="btn btn--radius-1"><i class="fa fa-undo"></i> Cancel</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+<% include ../partials/footer.ejs %>

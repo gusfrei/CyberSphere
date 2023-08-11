@@ -45,12 +45,13 @@ router.post('/add', (req, res, next) => {
 // GET the incident Details page to edit an existing incident
 router.get('/:id', (req, res, next) => {
   let id = req.params.id;
+
   Incident.findById(id, (err, incidentToEdit) => {
     if (err) {
       console.error(err);
       return next(err);
     }
-    res.render('incidents/details', {
+    res.render('incidents/detailsedit', {
       title: 'Edit Incident',
       incidents: incidentToEdit
     });

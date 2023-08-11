@@ -116,3 +116,20 @@ $.fn.pageMe = function(opts){
     {pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:6}
     );
 })();
+//Script for tab section 
+function openSection(evt, sectionName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("section");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-border-custom", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-border-custom";
+  }
+  // Load the "Login" section initially
+document.getElementById("Register").style.display = "block";
+document.querySelector(".tablink").className += " w3-border-custom";

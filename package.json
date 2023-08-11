@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^4.5.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
@@ -14,7 +15,7 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "express-favicon": "^2.0.4",
-    "express-session": "^1.17.1",
+    "express-session": "^1.17.3",
     "font-awesome": "^4.7.0",
     "http-errors": "~1.6.2",
     "jquery": "^3.5.1",
