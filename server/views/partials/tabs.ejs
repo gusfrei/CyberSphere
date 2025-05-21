@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .w3-border-custom {
+      border-bottom: 5px solid #5fb1d4 !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-container1">
+  <h2 class="section-title">Steps on How to Use the System</h2>
+
+  <div class="tab-container2">
+    <div class="w3-row">
+      <a href="javascript:void(0)" onclick="openSection(event, 'Register');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">REGISTER</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openSection(event, 'Login');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">LOGIN</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openSection(event, 'AddIncident');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">ADD INCIDENT</div>
+      </a>
+    </div>
+  </div>
+
+  <div id="Register" class="w3-container section" style="display:none">
+    <h2>Register</h2>
+    <p>If you do not have an account with us,</p>
+    <p>please create one to have access to our incident form and table.</p>
+  </div>
+
+  <div id="Login" class="w3-container section" style="display:none">
+    <h2>Login</h2>
+    <p>Please login with your credentials to access the system.</p>
+  </div>
+
+  <div id="AddIncident" class="w3-container section" style="display:none">
+    <h2>Add Incident</h2>
+    <p>You can add a new incident to the system, Edit</p>
+    <p>And delete incidents from the system.</p>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- JAVASCRIPT SECTION -->
+<script src="/Scripts/app.js"></script>

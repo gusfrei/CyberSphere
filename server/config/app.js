@@ -105,4 +105,6 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
+app.use(express.static('../assets/images'));
+
 module.exports = app;

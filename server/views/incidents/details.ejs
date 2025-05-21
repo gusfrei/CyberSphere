@@ -1,33 +1,40 @@
-<!-- File: details.ejs -->
-
 <% include ../partials/header.ejs %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel='stylesheet' href='/Content/app.css' />
+<style>
+
+  
+</style>
 
 <!-- MAIN CONTENT -->
 <div class="container">
   <div class="row">
     <div class="col-md-offset-3 col-md-6">
-      <h1>Incident Management</h1>
+      <h1 style="margin-top: 100px;">Incident Management</h1>
       <form class="form" method="post">
         <div class="form-group">
           <label for="incidentIDField">Incident ID</label>
-          <input type="text" class="form-control" id="incidentIDField" name="incidentID" placeholder="Type in Incident ID"  required>
+          <input type="text" class="form-control" id="incidentIDField" name="incidentID" placeholder="Type in Incident ID" required>
         </div>
         <div class="form-group">
           <label for="incidentClassField">Incident Class</label>
-          <input type="text" class="form-control" id="incidentClassField" name="incidentClass" placeholder="Type in Incident Class"  required>
+          <input type="text" class="form-control" id="incidentClassField" name="incidentClass" placeholder="Type in Incident Class" required>
         </div>
         <div class="form-group">
           <label for="incidentDateField">Incident Date</label>
-          <input type="date" class="form-control" id="incidentDateField" name="incidentDate" >
+          <input type="date" class="form-control" id="incidentDateField" name="incidentDate">
         </div>
         <div class="form-group">
           <label for="incidentDescriptionField">Incident Description</label>
-          <input type="text" class="form-control" id="incidentDescriptionField" name="incidentDescription" placeholder="Describe the incident"  required>
+          <input type="text" class="form-control" id="incidentDescriptionField" name="incidentDescription" placeholder="Describe the incident" required>
         </div>
 
-        <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Save Incident</button>
-        <a href="/incidents" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
-      </form>
+          <button type="submit" class="btn btn--radius-2 btn--blue"><i class="fa fa-check-square-o"></i> Save Incident</button>
+          <a href="/incidents" class="btn btn--radius-1"><i class="fa fa-undo"></i> Cancel</a>
+        </form>
+      </div>
     </div>
   </div>
 </div>
